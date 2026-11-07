@@ -3,10 +3,16 @@ function change_mode() {
     if (!dark_mode) {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+
+        document.querySelectorAll("a").forEach(element => element.classList.remove("darkmode"));
+        document.querySelectorAll("a").forEach(element => element.classList.add("lightmode"));
     }
     else {
         document.body.style.backgroundColor = "#111111";
         document.body.style.color = "white";
+
+        document.querySelectorAll("a").forEach(element => element.classList.remove("lightmode"));
+        document.querySelectorAll("a").forEach(element => element.classList.add("darkmode"));
     }
 }
 
