@@ -7,3 +7,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: serif;
 }
+
+a {
+    color: rgb(140, 160, 230);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(170, 150, 175);
+}
